@@ -8,5 +8,5 @@
         <artifactId>ChengZeQuan-manager</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>jd-manager-interface</artifactId>
+    <artifactId>ChengZeQuan-manager-interface</artifactId>
 </project>

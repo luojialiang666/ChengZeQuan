@@ -19,7 +19,7 @@ Date.prototype.format = function(format){
     return format; 
 };
 
-var trip = ITRIP = {
+var jd = JD = {
 	// 编辑器参数
 	kingEditorParams : {
 		//指定上传文件参数名称
@@ -84,7 +84,7 @@ var trip = ITRIP = {
         	$(e).click(function(){
         		var form = $(this).parentsUntil("form").parent("form");
         		//打开图片上传窗口
-        		KindEditor.editor(TT.kingEditorParams).loadPlugin('multiimage',function(){
+        		KindEditor.editor(JD.kingEditorParams).loadPlugin('multiimage',function(){
         			var editor = this;
         			editor.plugin.multiImageDialog({
 						clickFn : function(urlList) {
@@ -147,7 +147,7 @@ var trip = ITRIP = {
     },
     
     createEditor : function(select){
-    	return KindEditor.create(select, TT.kingEditorParams);
+    	return KindEditor.create(select, JD.kingEditorParams);
     },
     
     /**

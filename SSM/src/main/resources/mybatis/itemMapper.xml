@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.mapper.itemMapper" >
+
+    <select id="selectByExample" resultType="com.ssm.pojo.TbItem" >
+            SELECT 	*
+                FROM
+                jd.tb_item where id = 153110270392480
+    </select>
+<select id="selectAll" resultType="com.ssm.pojo.TbItem">
+     SELECT 	*
+                FROM
+                jd.tb_item
+</select>
+
+</mapper>

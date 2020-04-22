@@ -22,5 +22,6 @@
     <!-- 配置协议，用来暴漏服务(配置暴漏服务的端口号) -->
     <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
     <!-- 暴漏服务 -->
-    <dubbo:service interface="org.java.service.ItemService" ref="itemServiceImpl"></dubbo:service>
+    <dubbo:service interface="org.java.service.ItemService" ref="itemServiceImpl" timeout="30000"></dubbo:service>
+    <dubbo:service interface="org.java.service.ItemCatService" ref="itemCatServiceImpl" timeout="30000"></dubbo:service>
 </beans>

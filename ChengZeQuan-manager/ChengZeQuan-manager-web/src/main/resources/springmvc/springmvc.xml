@@ -31,4 +31,5 @@
     <dubbo:registry protocol="zookeeper" address="192.168.25.131:2181"></dubbo:registry>
     <!-- 引用服务 -->
     <dubbo:reference interface="org.java.service.ItemService" id="itemService" timeout="30000"></dubbo:reference>
+    <dubbo:reference interface="org.java.service.ItemCatService" id="itemCatService" timeout="30000"></dubbo:reference>
 </beans>
